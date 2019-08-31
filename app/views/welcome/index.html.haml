@@ -1,8 +1,9 @@
 #banner
-  .abnner_content
+  .banner_content
     %h1 File Cabinet
     %p Your life's work. Organized, always.
-    %button= link_to "enter", new_user_registration_path
+    %button= link_to "Sign Up", new_user_registration_path
+    %button= link_to "Log In", new_user_session_path
 
 #callouts
   .callout_inner
@@ -12,9 +13,13 @@
         %p skjadfgkjsdfglnksldfnkgslkjdfgljkbnsdfkj kjsdfgjlbksdf sdflbjksdflbjkkjnbsdf gjknsdfgjknsdf
 
 
-#bottom_cta
-  .wrapper
-    %h2 Go Ahead!
-    %br
-      %button= link_to "Join Now", new_user_registration_path
+-##bottom_cta
+-#  .wrapper
+-#    %h2 Not a member? sign up here!
+-#    %br
+-#      %button= link_to "Join Now", new_user_registration_path
+-#
 
+
+#bottom_cta
+  .KeeterViewTool::Renderer.copyright &copy; Alec Keeter, All rights reserved
